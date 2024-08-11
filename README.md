@@ -1,2 +1,3 @@
 # roomies
-Website to find your roommate
+Website to find your roommate.
+
