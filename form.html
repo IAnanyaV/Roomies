@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>roomies</title>
+    <link rel="stylesheet" href="pro.css">
+    <!--box icon link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <style>
+       
+.scrollable {
+    overflow-y: auto;
+    height: 120vh;
+}
+.cen{
+   justify-content: center;
+   align-items: center;
+   transform: translate(-50%, -50%);
+   width: 60%;
+   height: 60%;
+   margin: 50px auto;
+   background:#ffffff;
+   padding : 20px;
+   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+   margin-top: 75px; 
+}
+.log{
+   background: url("images/formbg.jpg");
+   background-size: cover;
+   background-position: center;
+   text-decoration: none;
+}
+.txt_field {
+    margin: 20px 0;
+}
+.txt_field input[type="text"] {
+    width: calc(100%-20px);
+    padding: 10px;
+    border-radius : 5px;
+    border: 1px solid black;
+    font-size:16px;
+}
+.txt_field lable {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.btn-sub {
+    background-color:var(--main-color);
+    color:#ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius : 5px;
+    cursor:pointer'
+}
+input[type="radio"] ,input[type="checkbox"]
+{
+    margin-right:10px;
+}
+</style>
+</head>
+<body class="log">
+
+    <header >
+        <div class="nav container">
+            <a href="index.html" class="logo"><i class="bx bx-home"></i>Roomies</a>    
+            <!--sign up-->
+            <a href="sign-up.html" class="btn-si">Sign Up</a>
+        </div>
+       </header>
+    <center><h1> Preference Form </h1></center>
+    <!-- form -->
+    <div class="cen scrollable">    
+        <form action="login.html" method="get">
+            <div >
+                <div class="txt_field"><label>I am</label><br></div>
+                <input type="radio" id="student" name="I am" required><label for="student">Student</label>
+                <br>
+                <input type="radio" id="Employee" name="I am" required><label for="worker">Employee</label>
+            </div>
+            <div >
+                <div class="txt_field"><label>Gender Identity</label><br></div>
+                <input type="radio" id="male" name="Gender" value="male" required>
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="Gender" value="female" required>
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="Gender" value="other" required>
+                <label for="other">Other</label> <label>Specify</label>
+                <input class="txt_field" type="text" required>
+            </div>
+            <div >
+                <div class="txt_field"><lable> Study Habit: (Check all that apply)</lable><br></div>
+                <input type="checkbox" id="1" name="Study" value="1">
+                <lable for="1">In my room</lable><br>
+                <input type="checkbox" id="2" name="Study" value="2">
+                <lable for="2">With Tv/music/YouTube</lable><br>
+                <input type="checkbox" id="3" name="Study" value="3">
+                <lable for="3">Alone</lable><br>
+                <input type="checkbox" id="4" name="Study" value="4">
+                <lable for="4">With a group</lable><br>
+                <input type="checkbox" id="5" name="Study" value="5">
+                <lable for="5">One-on-One</lable><br>
+              </div>
+              <div >
+                <div class="txt_field"><lable> Sleeping Habit: (Check all that apply)</lable><br></div>
+                <input type="checkbox" id="1" name="Sleeping" value="1">
+                <lable for="1">Go to bed early</lable>
+                <input type="checkbox" id="2" name="Sleeping" value="2">
+                <lable for="2">Get up early</lable>
+                <input type="checkbox" id="3" name="Sleeping" value="3">
+                <lable for="3">Flexible</lable><br>
+                <input type="checkbox" id="4" name="Sleeping" value="4">
+                <lable for="4">Some Light</lable>
+                <input type="checkbox" id="5" name="Sleeping" value="5">
+                <lable for="5">Irregular</lable>
+                <input type="checkbox" id="6" name="Sleeping" value="6">
+                <lable for="6">Go to bed late</lable><br>
+                <input type="checkbox" id="7" name="Sleeping" value="7">
+                <lable for="7">Get up late</lable>
+                <input type="checkbox" id="8" name="Sleeping" value="8">
+                <lable for="8">Schedule driven</lable>
+                <input type="checkbox" id="9" name="Sleeping" value="9">
+                <lable for="9">No light</lable><br>
+                </div>
+                <div >
+                    <div class="txt_field"><lable> Clealiness: (Check all that apply)</lable><br></div>
+                    <input type="checkbox" id="1" name="Clean" value="1">
+                    <lable for="1">Everything has a place and goes there</lable><br>
+                    <input type="checkbox" id="2" name="Clean" value="2">
+                    <lable for="2">Some things just don not have a place</lable><br>
+                    <input type="checkbox" id="3" name="Clean" value="3">
+                    <lable for="3">Everything has a place and may or may not be there</lable><br>
+                    <input type="checkbox" id="4" name="Clean" value="4">
+                    <lable for="4">Everything has a place and that place is the floor</lable>
+                </div>
+                <div >
+                    <div class="txt_field"><lable> Smoking/Vaping/Drinking: (Check all that apply)</lable><br></div>
+                    <input type="checkbox" id="1" name="Smoke" value="1">
+                    <lable for="1">I am a nonsmoker/nondrinker and I am not bothered by a roommate who smokes/vapes/drink outside</lable><br>
+                    <input type="checkbox" id="2" name="Smoke" value="2">
+                    <lable for="2">I am a nonsmoker but I am allergic to smoke/vape/alcohol or bothered by a roommate who smokes/vapes/drink outside</lable><br>
+                    <input type="checkbox" id="3" name="Smoke" value="3">
+                    <lable for="3">I am a smoker/vaper/drinker </lable>
+                </div>
+                <div >
+                    <div class="txt_field"><lable>Guests: (check all that apply)</lable><br></div>
+                    <input type="checkbox" id="1" name="Guest" value="1">
+                    <lable for="1">I frequently have day guests</lable><br>
+                    <input type="checkbox" id="2" name="Guest" value="2">
+                    <lable for="2">I rarely have day guests </lable><br>
+                    <input type="checkbox" id="3" name="Guest" value="3">
+                    <lable for="3">I frequently have overnight guests  </lable><br>
+                    <input type="checkbox" id="4" name="Guest" value="4">
+                    <lable for="4">I rarely have overnight guests </lable>
+                </div>
+                <div >
+                   <div class="txt_field"> <lable>Pets: (check all that apply)</lable><br></div>
+                    <input type="radio" id="1" name="Pet" value="1">
+                    <lable for="1">I like pets</lable><br>
+                    <input type="radio" id="2" name="Pet" value="2">
+                    <lable for="2">I do not like pets and have problem if my roommate has </lable><br>
+                    <input type="radio" id="3" name="Pet" value="3">
+                    <lable for="3">Neutral  </lable>
+                </div>
+                <div class= "txt_field">
+                    <input type="text" required>
+                    <span></span>
+                    <label>What three words best describe you?</label>
+                  </div>          
+           <center> <button type="submit" class="btn-sub">Submit</button> </center>
+            </div>
+        </form>
+    </div>s
+</body>
+</html>
